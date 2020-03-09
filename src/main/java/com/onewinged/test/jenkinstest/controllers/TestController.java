@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
 
     @RequestMapping(value = "print", method= org.springframework.web.bind.annotation.RequestMethod.GET)
-    public void printTest() {
-        System.out.println("Hello world, I`m a working java application build by MAVEN");
+    public String printTest() {
+        String s = "Hello world, I`m a working java application build by MAVEN";
+        return s;
     }
 }

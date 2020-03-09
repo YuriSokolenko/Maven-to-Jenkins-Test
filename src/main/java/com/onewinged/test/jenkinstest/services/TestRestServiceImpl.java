@@ -7,7 +7,8 @@ public class TestRestServiceImpl implements TestRestService {
 
 
     @Override
-    public void printTestMessage() {
-        System.out.println("Hello world, I`m a working java application build by MAVEN");
+    public String printTestMessage() {
+        String s = "Hello world, I`m a working java application build by MAVEN";
+        return s;
     }
 }
